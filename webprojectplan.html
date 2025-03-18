@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="Jordan, Modelli Jordan, Storia delle scarpe Jordan">
+  <title>WebProjectPlan - Storia dei Modelli Air Jordan</title>
+  <!-- Dublin Core -->
+  <META name="DC.Title" content="Storia dei Modelli Air Jordan" />
+  <META name="DC.Creator" content="Manuel Leotta" />
+  <META name="DC.Subject" content="Jordan, Modelli, Sneakers" />
+  <META name="DC.Description" content="Un catalogo dei primi 18 modelli delle Jordan" />
+  <META name="DC.Publisher" content="Github Pages" />
+  <META name="DC.Date" content="2025/01/01" />
+  <META name="DC.Type" content="Catalogo web" />
+  <META name="DC.Format" content="Sito web" />
+  <META name="DC.Source" content="Modelli Jordan" />
+  <META name="DC.Language" content="It" />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="display-1 text-outline">JORDAN COLLECTION</h1>
+  </header>
+
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">Jordan History</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Iconiche
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="model-detail.html?modello=jordan-1">Jordan 1</a></li>
+              <li><a class="dropdown-item" href="#">Jordan 3</a></li>
+              <li><a class="dropdown-item" href="#">Jordan 18</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catalogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="container my-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item" aria-current="page">
+        WebProjectPlan
+      </li>
+    </ol>
+  </nav>
+
+  <!-- Indice Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Indice del Progetto</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li><a href="#idea">1. Idea</a></li>
+          <li><a href="#brief">2. Brief</a></li>
+          <ul>
+            <li><a href="#finalita">Finalità</a></li>
+            <li><a href="#pubblico">Pubblico</a></li>
+            <li><a href="#accesso">Accesso</a></li>
+            <li><a href="#contenuti">Contenuti e Dati</a></li>
+          </ul>
+          <li><a href="#benchmark">3. Benchmark</a></li>
+          <ul>
+            <li><a href="#analisi-mercato">Analisi di Mercato</a></li>
+            <li>
+              <a href="#descrizione-concorrenti">Descrizione dei Concorrenti</a>
+            </li>
+          </ul>
+          <li><a href="#struttura">4. Struttura</a></li>
+          <ul>
+            <li><a href="#mappa-concettuale">Mappa Concettuale</a></li>
+            <li><a href="#schema-dipendenze">Schema delle Dipendenze</a></li>
+            <li><a href="#categorie">Categorie Descrittive</a></li>
+          </ul>
+          <li><a href="#layout">5. Layout</a></li>
+          <ul>
+            <li><a href="#wireframe-index">Wireframe Index</a></li>
+            <li><a href="#wireframe-catalogo">Wireframe Catalogo</a></li>
+            <li>
+              <a href="#wireframe-modelDetail">Wireframe Singolo Modello</a>
+            </li>
+            <li><a href="#wireframe-contatti">Wireframe Contatti</a></li>
+            <li><a href="#wireframe-about">Wireframe About</a></li>
+            <li>
+              <a href="#wireframe-webprojectplan">Wireframe WebProjectPlan</a>
+            </li>
+          </ul>
+          <li><a href="#usabilita">6. Usabilità</a></li>
+          <ul>
+            <li>
+              <a href="#architettura-usabilita">Norme di Usabilità per l'Architettura</a>
+            </li>
+            <li>
+              <a href="#tipografia-usabilita">Norme di Usabilità per Aspetto e Tipografia</a>
+            </li>
+            <li>
+              <a href="#colori-font-usabilita">Norme di Usabilità per Colori, Font e Icone</a>
+            </li>
+          </ul>
+          <li><a href="#servizi">7. Servizi</a></li>
+          <ul>
+            <li>
+              <a href="#browsing-servizi">Sistemi di Browsing per Valorizzare</a>
+            </li>
+            <li>
+              <a href="#tools-servizi">Utilities e Tool per l'Interazione</a>
+            </li>
+            <li>
+              <a href="#metodi-servizi">Strumenti, Servizi, Tool e Metodi Aggiuntivi</a>
+            </li>
+          </ul>
+          <li><a href="#bibliografia">8. Bibliografia/Sitografia</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezioni -->
+  <section id="idea" class="container my-5">
+    <h3>1. Idea (Abstract)</h3>
+    <p>Realizzare una collezione digitale dedicata ai primi 18 modelli delle sneaker Air Jordan, ovvero quelle indossate
+      da Michael Jordan durante la sua carriera NBA, tra il 1985 e il 2003. L'obiettivo è analizzare l'evoluzione del
+      design, delle tecnologie e del valore culturale che queste scarpe hanno assunto nel tempo. Sarà possibile
+      esplorare la collezione attraverso diverse modalità di navigazione: per anno e per numero del modello. In
+      aggiunta, saranno presenti strumenti di browsing tematico e cronologico per contestualizzare al meglio ogni
+      modello. Ogni sneaker avrà una scheda dedicata, con immagine, descrizione, importanza storica e anno di uscita. Il
+      progetto si rivolge agli appassionati di sneakers, sport e cultura pop, ma è pensato anche per chi si approccia
+      per la prima volta al mondo delle Air Jordan</p>
+  </section>
+
+  <section id="brief" class="container my-5">
+    <h3>2. Brief</h3>
+    <div class="container me-2">
+      <h4 id="finalita">2.1 Finalità</h4>
+      <p>Il progetto si occupa di creare una collezione digitale dedicata ai primi 18 modelli di Air Jordan, quelli
+        prodotti durante la carriera di Michael Jordan in NBA. L’obiettivo è valorizzare la storia e l’evoluzione di
+        queste sneaker, considerate vere e proprie icone culturali e artistiche, raccontando come abbiano rivoluzionato
+        non solo il mondo dello sport, ma anche quello della moda e della comunicazione pubblicitaria. La risorsa
+        servirà come punto di riferimento per appassionati, collezionisti e curiosi che vogliono approfondire il
+        fenomeno Jordan attraverso immagini, descrizioni e dati storici.</p>
+
+      <h4 id="pubblico">2.2 Pubblico</h4>
+      <p>Il pubblico principale è rappresentato dagli appassionati della storia delle sneakers, fan di Michael Jordan e
+        collezionisti di scarpe da basket. Tuttavia, il sito si rivolge anche a un pubblico più ampio composto da
+        curiosi, studenti di design e moda, e persone interessate alla storia dello sport e della comunicazione.
+        L’accesso ai contenuti sarà libero per tutti gli utenti. I visitatori del sito potranno navigare nella
+        collezione, visualizzare i modelli e leggere le descrizioni.</p>
+
+      <h4 id="accesso">2.3 Accesso</h4>
+      <p>La collezione si basa su contenuti testuali e immagini ad alta qualità, arricchiti da schede tecniche e
+        curiosità come anno e importanza storica del modello. Il design è multipiattaforma, pensato per essere fruibile
+        da qualsiasi dispositivo: smartphone, tablet e PC. L’utilizzo di Bootstrap garantisce un’interfaccia semplice e
+        chiara, con una navigazione fluida anche su dispositivi mobili, pur mantenendo una resa ottimale su schermi
+        desktop, considerati il device principale.</p>
+
+      <h4 id="contenuti">2.4 Contenuti e Dati</h4>
+      <p>Le immagini delle sneaker sono state raccolte da fonti online affidabili, tra cui archivi del negozio JDSports,
+        siti specializzati e piattaforme di collezionismo. Le immagini sono state ridimensionate e ottimizzate</p>
+    </div>
+  </section>
+
+  <section id="benchmark" class="container my-5">
+    <h3>3. Benchmark</h3>
+    <div class="container me-2">
+      <h4 id="analisi-mercato">3.1 Analisi di Mercato</h4>
+      <p>Attualmente esistono diversi siti web che trattano i modelli delle scarpe Jordan, ma pochi si concentrano
+        esclusivamente sulla storia e sull’evoluzione dei modelli dal Jordan 1 al Jordan 18 (periodo storico in cui
+        Micheal Jordan ha giocato), un periodo che ha visto non solo l'innovazione nel design, ma anche l’impatto
+        culturale di queste scarpe, che sono diventate simboli di stile, arte e sport.
+        La necessità di un nuovo sito emerge dalla mancanza di una risorsa che esplori esclusivamente le sneakers che ha
+        indossato Jordan in campo e per ognuna andando nel dettaglio per ogni modello, dal punto di vista sia estetico
+        che pubblicitario, includendo anche l'importanza storica in cui queste scarpe sono diventate icone.
+        Uno di questi siti è https://blog.jdsports.it/tutti-i-modelli-di-jordan-della-storia/ che però offre una pagina
+        web unica molto lunga senza alcun filtro per una migliore visualizzazione dei modelli. Un altro sito è
+        https://www.nike.com/jordan
+        che offre un design molto moderno con tantissimi filtri diversi che ottimizzano la ricerca dei modelli, quello
+        che però non offre è la storia e l'importanza di ogni singolo modello, inoltre esso si focalizza sul commercio e
+        marketing.
+      </p>
+
+      <h4 id="descrizione-concorrenti">3.2 Descrizione dei Concorrenti</h4>
+      <p>I due siti concorrenti sono:</p>
+      <ul>
+        <li>https://blog.jdsports.it/tutti-i-modelli-di-jordan-della-storia/</li>
+        <li>https://www.nike.com/jordan</li>
+      </ul>
+      <p>Il blog di JD Sports fornisce una panoramica completa della storia dei modelli Jordan, con focus su design,
+        innovazioni e impatto culturale. Tuttavia, la struttura del sito è basata su una lunga pagina unica, senza
+        strumenti di navigazione avanzati o filtri per esplorare facilmente i modelli. La limitata interattività
+        potrebbe rendere difficile per gli utenti trovare informazioni specifiche in modo rapido.</p>
+      <p>Il sito ufficiale di Nike Jordan ha un design moderno e funzionale, con numerosi filtri per la ricerca dei
+        modelli, come la selezione per colore, taglia e prezzo. Sebbene la navigazione sia altamente interattiva e
+        orientata al commercio, il sito non offre un'analisi approfondita della storia o dell’impatto culturale di
+        ciascun modello. Si concentra principalmente sul marketing e sulle specifiche tecniche, tralasciando l'aspetto
+        storico e iconico dei modelli Jordan.</p>
+    </div>
+  </section>
+
+  <section id="struttura" class="container my-5">
+    <h3>4. Struttura</h3>
+    <div class="container me-2">
+      <div class="row mb-4">
+        <h4 id="mappa-concettuale">4.1 Mappa Concettuale</h4>
+        <img class="col-md-6" src="src/MappaConcettuale.jpeg" alt="mappa-concettuale">
+
+        <p class="col-md-6">
+          L'idea generale è quella di voler rappresentare la struttura fondamentale del brand Jordan e i suoi modelli.
+          I modelli sono suddivisi in 2 categorie; Iconiche e storiche. Ogni modello però è descritto in maniera uguale,
+          la suddivisione serve per far capire quali modelli hanno avuto maggior importanza. Inoltre, il brand Jordan ha
+          una sua sede
+          che nella mia risorsa viene rappresentata da una mappa.
+        </p>
+      </div>
+
+      <div class="row mb-4">
+        <h4 id="schema-dipendenze">4.2 Schema delle Dipendenze</h4>
+        <img class="col-md-6" src="src/SchemaDipendenze.jpg" alt="schema-dipendenze">
+
+        <p class="col-md-6">
+          In questo schema delle dipendenze troviamo in cima la Homepage, che rappresenta la pagina di livello più alto
+          del sito. Qui vengono presentati i contenuti principali del progetto, una breve introduzione alla storia delle
+          Air Jordan e i sistemi di navigazione principale, che permettono l’accesso alle varie sezioni del sito.
+          Subito sotto la Homepage, si sviluppano quattro sezioni principali di secondo livello:<br>
+          Catalogo: è il cuore del progetto: sono presenti tutti i modelli Jordan 1-18.
+          Da qui è possibile accedere alle schede dei singoli modelli <br>
+          <br>
+          Iconiche: Sezione dedicata ai modelli Jordan più rappresentativi e famosi.
+          Qui si mettono in risalto i modelli che hanno avuto un impatto maggiore nella storia del brand Jordan.<br>
+          <br>
+          Contatti: l'utente da questa pagina può:<br>
+          Iscriversi alla community: accedere ad aree riservate, ricevere aggiornamenti o partecipare a forum di
+          discussione. <br>
+          Visualizzare informazioni generali sul progetto, come mission e visione. <br>
+          Trovare indicazioni su una eventuale sede fisica<br>
+          <br>
+          About:
+          Sezione informativa sugli obiettivi del progetto, la sua finalità culturale.<br>
+
+          Infine, il terzo livello è composto dalla pagina del Singolo Modello e dalle sottosezioni "Iscrizione
+          community / Informazioni / Sede".
+          La pagina relativa al singolo modello contiene tutte le informazioni relative ad esso.
+          Le informazioni importanti del modello sono l'anno di uscita, importanza del modello, una breve descrizione e
+          la storia.
+          Le sottosezioni invece, sono finalizzate a rendere più semplice l’interazione utente-sito.
+
+        </p>
+      </div>
+
+      <h4 id="categorie">4.3 Categorie Descrittive</h4>
+      <p>
+        Di seguito sono riportate le possibili categorie descrittive di un item della collezione, in particolare il
+        primo modello, la Jordan 1:
+      <ul>
+        <li>Nome modello: Air Jordan 1</li>
+        <li>Anno: 1985</li>
+        <li>Descrizione: Il primo modello in assoluto, denominato 'Notorious', che ribattezza Michael Jordan 'Rookie of
+          the Year'.</li>
+        <li>Importanza: Ha segnato l'inizio della collaborazione tra Michael Jordan e Nike, diventando un'icona nel
+          mondo delle sneakers.</li>
+        <li>Prezzo di lancio: 65$.</li>
+        <li>Storia: L’aspetto più interessante del primo modello di Jordan non è tanto la parte tecnica quanto la sua
+          storia. Inizialmente queste sneakers furono bandite dal campionato NBA, infatti il commissario David Stern, in
+          passato, aveva già bandito una scarpa simile rossa e nera perché violava le disposizioni riguardanti le
+          divise. Indossarle avrebbe comportato una multa da ben 5000$ a partita! E Nike cosa ha fatto? Ha coperto la
+          multa, ovviamente. Jordan scese in campo con le sue AJI durante tutta la stagione, no matter what.</li>
+        <li>Designer: Peter Moore.</li>
+      </ul>
+      </p>
+    </div>
+  </section>
+
+  <section id="layout" class="container my-5">
+    <h3>5. Layout</h3>
+    <div class="container me-2">
+      <div class="row mb-4">
+        <h4 id="wireframe-index">5.1 Wireframe Index</h4>
+        <img class="col-md-6" src="src/HOME.png" alt="wireframe-index">
+        <p class="col-md-6">Questo è il wireframe della pagina home.
+          Dal punto di vista dell'architettura troviamo una testata che include un'immagine principale (hero image),
+          utile per catturare immediatamente l’attenzione dell’utente e dare un'identità visiva al sito.
+          Al di sotto si trova la sezione di navigazione, composta da una navbar che si occupa della navigazione
+          primaria.
+          All’interno della navbar sono presenti dei dropdown button, che se premuti permettono di accedere ai canali di
+          navigazione secondaria, garantendo un'esperienza di browsing completa e intuitiva.
+          La prima sezione presenta il progetto. Qui l'utente trova una breve descrizione introduttiva e un bottone che
+          consente un rapido accesso al catalogo, facilitando la navigazione contestuale.
+          Nella seconda e terza sezione abbiamo un'immagine e una breve descrizione di essa che rileva l'importanza
+          della storia dei modelli Jordan. Nella quarta sezione troviamo il trailer del film AIR.
+          Nella quinta e quindi ultima sezione abbiamo il footer che consente di avere vari collegamenti; Social,
+          Credits, Information ed infine il WebProjectPlan.
+        </p>
+      </div>
+
+      <div class="row mb-4">
+        <h4 id="wireframe-catalogo">5.2 Wireframe Catalogo</h4>
+        <img class="col-md-6" src="src/Catalogo.png" alt="wireframe-catalogo">
+        <p class="col-md-6">Questo è il wireframe della pagina Catalogo dedicata alla collezione dei modelli Air Jordan.
+          In questa sezione possiamo esplorare i vari modelli delle sneakers, visualizzarli e ordinarli secondo diversi
+          criteri. Nella testata del sito troviamo un carousel di immagini. Sotto la barra di navigazione è presente il
+          breadcrumb, che mostra il percorso attuale e consente di tornare rapidamente alla Home.
+          Il corpo principale è suddiviso in due sezioni:
+          Colonna sinistra: è presente una sidebar che raccoglie tutti i filtri disponibili. Questi sono organizzati in
+          un accordion per facilitare la consultazione, evitando di appesantire l’interfaccia. I filtri permettono di
+          ordinare i modelli per anno di uscita (dal più vecchio al più recente e viceversa), e di filtrare per numero
+          di modello, selezionando un intervallo da un campo "Da" a un campo "A".
+          Colonna destra: è la sezione dove vengono mostrati i singoli modelli Jordan, disposti su più righe, ognuna con
+          un massimo di 3 elementi per garantire una buona visibilità su ogni tipo di schermo. Ogni scheda mostra
+          un’immagine della scarpa, il nome del modello, una breve descrizione e un link che porta alla pagina di
+          dettaglio del prodotto.
+        </p>
+      </div>
+
+
+      <div class="row mb-4">
+        <h4 id="wireframe-modelDetail">5.3 Wireframe Singolo Modello</h4>
+        <img class="col-md-6" src="src/Model-detail.png" alt="wireframe-modelDetail">
+        <p class="col-md-6">
+          Questo è il wireframe della pagina dei Singoli modelli dedicata alla visione della storia di ogni singolo
+          modello.
+          Anche in questo caso il corpo principale è suddiviso in due sezioni:
+          A sinistra abbiamo un carousel del modello Jordan che abbiamo scelto di approfondire dove possiamo ammirare la
+          scarpa e capirne il suo design.
+          A destra abbiamo l'elenco di informazioni relative al modello; l'anno di uscita del modello, una breve
+          descrizione, l'importanza di essa ed infine un po' di storia.
+          Sotto questa sezione principale troviamo la possibilità di condividere il modello in vari modi; Facebook,
+          Whatsapp, X, Email e Sms.
+        </p>
+      </div>
+
+
+      <div class="row mb-4">
+        <h4 id="wireframe-contatti">5.4 Wireframe Contatti</h4>
+        <img class="col-md-6" src="src/Contatti.png" alt="wireframe-contatti">
+        <p class="col-md-6">
+          Questo è il wireframe della pagina Contatti dedicata alla iscrizione alla community.
+          Anche in questo caso il corpo principale è suddiviso in due sezioni:
+          A sinistra abbiamo un form per iscriversi alla community del sito, per ricevere informazioni e rimanere
+          aggiornati sul mondo Jordan
+          A destra abbiamo l'elenco di informazioni relative al creatore del sito con eventuali collegamenti al social
+          Facebook e a LinkedIn.
+          Sotto questa sezione principale abbiamo la possibilità di trovare nella mappa la sede della nike a Bologna, il
+          negozio più rappresentativo di Bologna per il mondo Jordan.
+        </p>
+      </div>
+
+      <div class="row mb-4">
+        <h4 id="wireframe-about">5.5 Wireframe About</h4>
+        <img class="col-md-6" src="src/About.png" alt="wireframe-about">
+        <p class="col-md-6">
+          Questo è il wireframe della pagina About.
+          Sotto la barra di navigazione è presente il breadcrumb, che mostra il percorso attuale e consente di tornare
+          rapidamente alla Home.
+          La pagina è composta da una singola sezione che dà tutte le informazioni e obiettivi del mio sito web.
+          Infine abbiamo un bottone che permette il collegamento con la pagina relativa al Web Project Plan.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="usabilita" class="container my-5">
+    <h3>6. Usabilità</h3>
+    <div class="container me-2">
+      <h4 id="architettura-usabilita">
+        6.1 Norme di Usabilità per l'Architettura
+      </h4>
+      <p>
+        Dal punto di vista architetturale, ho impostato il progetto seguendo una logica di navigazione semplice.
+        La navbar principale si trova sempre in posizione fissa nella parte superiore dello
+        schermo, sfruttando la proprietà sticky-top di Bootstrap. Questo permette all’utente di avere costantemente
+        accesso ai principali
+        link di navigazione, indipendentemente dallo scorrimento verticale della pagina. Inoltre, è sempre ben visibile
+        quale sezione si
+        sta consultando, grazie all’evidenziazione del link attivo nel menu.
+
+        In tutte le pagine del sito, è presente il logo nella navbar che funge da collegamento rapido alla homepage. Ho
+        previsto anche una
+        breadcrumb trail nelle pagine secondarie, in particolare all’interno del catalogo e delle pagine dedicate ai
+        singoli modelli, per
+        facilitare la navigazione e fornire all’utente una chiara indicazione del percorso intrapreso. Il footer,
+        presente in ogni pagina,
+        è stato progettato con gli stessi elementi di navigazione presenti nella barra superiore, in modo da fornire una
+        coerenza visiva
+        e funzionale e offrire una seconda via per tornare a sezioni chiave del sito o contattare l’autore.
+
+        L’homepage è pensata per introdurre il progetto in modo immediato: l’immagine principale si trova in alto a
+        piena larghezza e sotto di essa si sviluppano le sezioni. La pagina catalogo è divisa in due
+        aree principali: una sidebar laterale contenente i filtri per il browsing dei modelli (per anno e numero del
+        modello), e una
+        sezione principale centrale in cui i modelli sono mostrati in griglia, ciascuno all’interno di una scheda (card)
+        che ne mostra
+        l’immagine, il nome e un link per approfondire.
+
+        Le pagine dei singoli modelli sono organizzate per mettere in risalto l’immagine della sneaker a sinistra,
+        mentre a destra si trovano i
+        dati tecnici e storici relativi al modello.
+
+        Tutto il sito è stato realizzato in maniera responsiva, grazie all’utilizzo delle griglie di Bootstrap: ogni
+        pagina è costruita con
+        la combinazione di row e col per garantire un corretto adattamento a tutti i formati di schermo, mantenendo la
+        leggibilità e la
+        fruibilità sia su desktop che su dispositivi mobili. Ho implementato anche vari bottoni che facilitano l’accesso
+        rapido a contenuti
+        di approfondimento, oltre alla navigazione tramite le voci principali della navbar e i filtri di ricerca.
+      </p>
+
+      <h4 id="tipografia-usabilita">
+        6.2 Norme di Usabilità per Aspetto e Tipografia
+      </h4>
+      <p>
+        Per l’aspetto visivo e la tipografia ho mantenuto uno stile semplice e lineare, con l’obiettivo di rendere il
+        contenuto sempre facilmente leggibile e comprensibile.
+        Il font utilizzato è Montserrat, importato dalla libreria Google Fonts, che garantisce una buona leggibilità sia
+        su
+        desktop che su dispositivi mobili. Ho scelto Montserrat che è un font moderno e leggibile, che dona un aspetto
+        elegante e professionale al sito.
+
+        Il testo è prevalentemente di colore bianco (con qualche testo rosso), su sfondi neri, per garantire il massimo
+        contrasto e la
+        leggibilità, mentre per evidenziare alcuni concetti chiave o link importanti ho utilizzato la formattazione in
+        grassetto (tramite il tag "strong") e colori di contrasto. I link all’interno dei testi sono di colore rosso
+          e prevedono un effetto di hover che aggiunge una sottolineatura per segnalare la loro cliccabilità.
+          Ogni link esterno o elemento interattivo è dotato dell’effetto hover per aiutare l'utente per esplorare il
+          sito con più facilità.
+
+          I pulsanti e i componenti dell’interfaccia come card e dropdown sono stati realizzati con i componenti
+          standard di Bootstrap, assicurando una coerenza estetica e una familiarità nell’interazione, oltre a fornire
+          feedback visivi immediati in caso di interazione (hover, focus).
+      </p>
+
+      <h4 id="colori-font-usabilita">
+        6.3 Norme di Usabilità per Colori, Font e Icone
+      </h4>
+      <p>
+        La palette cromatica si basa principalmente su tre colori chiave: nero, bianco e rosso, che richiamano
+        direttamente l’estetica dei modelli Air Jordan. Il nero domina lo sfondo, mentre il bianco è usato per il testo,
+        garantendo un’ottima leggibilità. Il rosso viene impiegato per evidenziare elementi di interazione, come link e
+        pulsanti, richiamando il colore simbolo del brand Jordan.
+
+        Il font Montserrat è stato scelto per il suo design moderno e professionale. Essendo un Google Font, è
+        ottimizzato per il web e offre prestazioni elevate su qualsiasi browser e dispositivo.
+
+        Le icone utilizzate provengono da Bootstrap Icons, inserite tramite SVG inline Inoltre, le icone
+        sono completamente cliccabili e utilizzate in punti strategici per migliorare l’esperienza utente.
+      </p>
+    </div>
+  </section>
+
+  <section id="servizi" class="container my-5">
+    <h3>7. Servizi</h3>
+    <div class="container me-2">
+      <h4 id="browsing-servizi">7.1 Sistemi di Browsing per Valorizzare</h4>
+      <p>Nel sito dedicato alla storia e all’evoluzione dei modelli Jordan 1-18, sono implementati diversi sistemi di
+        browsing per facilitare la navigazione e la ricerca degli utenti.
+        Sono presenti filtri avanzati nel catalogo; è possibile filtrare il catalogo in due modi, il primo è ordinare il
+        catalogo in base all'anno di uscita dei modelli (dal più vecchio e viceversa),
+        il secondo modo consiste nel filtrare il catalogo dal numero dei modelli, ovvero scegliere "Da" quale modello
+        "A" quale modello visualizzare il catalogo.
+      </p>
+
+      <h4 id="tools-servizi">7.2 Utilities e Tool per l'Interazione</h4>
+      <p>
+      <ul>
+        <li>
+          Bottoni Animati:<br>
+          Presenti in tutto il sito, i bottoni sono utilizzati per azioni fondamentali come “Cerca”, “Scopri di più” o
+          per attivare i filtri. Al passaggio del mouse (hover), cambiano colore o si illuminano leggermente, mentre il
+          testo viene sottolineato. Questo attira l’attenzione e guida l’utente nell’interazione.
+          Esempio nel progetto: I pulsanti nei filtri di ricerca "Dal più vecchio” o “Cerca ” sono ben evidenziati
+          tramite animazioni hover.
+        </li>
+        <li>
+          Accordion per Filtri Avanzati:<br>
+          Funzione: Gli accordion sono utilizzati nella sidebar del catalogo per organizzare i filtri (per anno, numero
+          modello, ecc.). Consentono di nascondere o mostrare i filtri al bisogno, mantenendo l’interfaccia ordinata.
+          Esempio nel progetto: Nella sezione “Filtri” del catalogo, l’utente può espandere o contrarre le sezioni
+          “Ordina per anno” o “Filtra per numero modello”.
+        </li>
+        <li>
+          Card Interattive dei Modelli: <br>
+          Funzione: Ogni modello di Air Jordan è rappresentato tramite una card che include l’immagine, il nome e l’anno
+          di uscita. Ogni card è cliccabile, al click si viene portati alla pagina dedicata al modello, incentivando
+          l’esplorazione.
+          Esempio nel progetto: Le card generate nella sezione del catalogo (tramite JS) rappresentano ciascun modello e
+          permettono di cliccare per maggiori dettagli.
+        </li>
+        <li>
+          Carousel delle Immagini: <br>
+          Funzione: I caroselli presenti nella homepage e nella pagina catalogo permettono di scorrere tra le immagini
+          dei modelli Air Jordan in modo dinamico. Consentono una visualizzazione rapida dei modelli più significativi o
+          iconici, stimolando la curiosità e facilitando il browsing.
+          Esempio nel progetto: Il “Jordan Carousel” nella pagina Catalogo scorre automaticamente mostrando le immagini
+          delle Jordan 1-18.
+        </li>
+        <li>
+          Breadcrumbs per la Navigazione Contestuale: <br>
+          Funzione: Ogni pagina del sito integra i breadcrumb per indicare chiaramente la posizione dell’utente
+          all’interno della struttura del sito e facilitare il ritorno alle sezioni superiori.
+          Esempio nel progetto: Nella pagina catalogo è presente un breadcrumb che mostra il percorso “Home > Catalogo”.
+        </li>
+        <li>
+          Pagination: <br>
+          Funzione: Consente di sfogliare il catalogo di modelli Air Jordan suddividendoli in più pagine, migliorando la
+          leggibilità e alleggerendo il caricamento dei contenuti.
+          Esempio nel progetto: Il sistema di paginazione in fondo alla pagina catalogo permette di scorrere tra i
+          diversi gruppi di modelli.
+        </li>
+        <li>
+          Timeline Orizzontale: <br>
+          Funzione: Una linea del tempo interattiva permette di visualizzare in sequenza cronologica l’evoluzione dei
+          modelli Jordan dal 1985 al 2003.
+          Esempio nel progetto: Presente nella sezione Timeline “Evoluzione delle Air Jordan”, con tutti i modelli dal
+          Jordan 1 al Jordan 18.
+        </li>
+      </ul>
+      </p>
+
+
+      <h4 id="metodi-servizi">
+        7.3 Strumenti, Servizi, Tool e Metodi Aggiuntivi
+      </h4>
+      <p>All'interno del sito sono inclusi servizi e tool aggiuntivi: le integrazioni social di ShareThis che permettono
+        di raggiungere le pagine social direttamente e inserire elementi per l'interazione e la condivisione.
+        Inoltre, è stato integrato il meta tag keywords, che aiuta i motori di ricerca a comprendere meglio i contenuti
+        del sito e a posizionarlo correttamente nelle ricerche relative alle scarpe Jordan
+        Una possibile aggiunta può esserre un grafico interattivo che rappresenta le innovazioni tecniche introdotte nei
+        diversi modelli, come ad esempio l’evoluzione delle suole, i materiali utilizzati o le tecnologie di
+        ammortizzazione.
+        Un'altra idea, dopo aver digitalizzato e analizzato le descrizioni testuali dei modelli Jordan, si potrebbe
+        creare una nuvola di tag che evidenzi le parole chiave più frequenti (tramite l'utilizzo di Voyant Tools o Tag
+        Cloud).
+      </p>
+    </div>
+  </section>
+
+  <section id="bibliografia" class="container my-5">
+    <h3>8. Bibliografia/Sitografia</h3>
+    <p>
+      Software e web application utilizzati:
+    <ul>
+      <li>Bootstrap: Framework CSS utilizzato per la creazione del layout responsive. (https://getbootstrap.com/)</li>
+      <li>Font Awesome: Libreria di icone per aggiungere simboli social e funzionalità. (https://fontawesome.com/)</li>
+      <li>GitHub Pages: Piattaforma di hosting utilizzata per pubblicare il sito web. (https://pages.github.com/)</li>
+      <li>Visual Studio Code: Editor di codice utilizzato per lo sviluppo del sito web. (https://code.visualstudio.com/)
+      </li>
+      <li>Google Fonts: Per la gestione dei font, in particolare l'uso di Montserrat. (https://fonts.google.com/)</li>
+      <li>Balsamiq: Per la creazione dei wireframes (https://balsamiq.com)</li>
+      <li>Lucid: Per la realizzazione della mappa concettuale e lo schema delle dipendenze (https://lucid.app/)</li>
+    </ul>
+    Immagini e contenuti:
+    <ul>
+      <li>Le immagini sono tratte da JDSports e da materiale originale. In particolare, sono state utilizzate immagini
+        di Michael Jordan in campo, con scarpe Air Jordan, inoltre ho utilizzato un'immagine per ogni modello storico.
+      </li>
+      <li>I testi sono stati scritti da JDsports.</li>
+    </ul>
+
+    Codice:
+    <ul>
+      <li>Uso della documentazione di Bootstrap e risorse di W3Schools per le pratiche di sviluppo web.
+        (https://www.w3schools.com/)</li>
+    </ul>
+
+    </p>
+  </section>
+  <!-- Bottone Torna su -->
+  <button id="tornaSu" onclick="tornaSu()">Torna su</button>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <div class="footer-contact">
+          <a style="text-decoration: none; color: white" href="contatti.html">
+            <h5>Contattaci:</h5>
+          </a>
+          <h6><i class="fas fa-phone-alt"></i> Telefono: 333 3333333</h6>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <div class="footer-social">
+          <h5>Seguici</h5>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <div class="footer-link">
+          <a class="link-item" href="#">Credits</a>
+          <a class="link-item" href="#">Information</a>
+          <a class="link-item" href="webprojectplan.html">WebProjectPlan</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Manuel Leotta 2024/2025 | Licenza Creative Commons</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Mostra il bottone quando scrolli sotto i 300px
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      const button = document.getElementById("tornaSu");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    }
+
+    // Torna all'inizio della pagina
+    function tornaSu() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+
+</html>
