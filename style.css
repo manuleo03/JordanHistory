@@ -142,47 +142,123 @@ header {
   font-style: normal;
   font-size: 17px;
 }
-/* Timeline orizzontale */
-.timeline-container {
-  margin: 20px auto;
-  text-align: center;
-}
+/* Timeline container */
 .timeline-horizontal {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between; /* Distribuisce uniformemente */
   align-items: center;
-  max-width: 90%; 
-  margin: auto;
-  padding: 20px;
   position: relative;
-  border-top: 3px solid #FF0000;
+  padding: 4rem 2rem;
+  gap: 4px;
+  width: 100%;
+  max-width: 100%; /* Evita overflow */
+  box-sizing: border-box;
 }
+
+/* La linea rossa orizzontale */
+.timeline-horizontal::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #e50914;
+  z-index: 0;
+}
+
 .timeline-item {
-  position: relative;
-  text-align: center;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 10px;
   flex: 1; 
+  min-width: 70px; 
+  max-width: 80px; 
+  height: 100px; 
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 10px rgba(229, 9, 20, 0.5); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.timeline-item:not(:last-child) {
-  margin-right: 10px; 
+
+/* Cerchio rosso centrato su ogni elemento */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: #e50914;
+  visibility: hidden;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 2;
 }
+
+/* Hover */
+.timeline-item:hover {
+  transform: scale(1.05);
+  background-color: #222;
+  color: #000;
+}
+
+/* Testi dentro l'item */
 .timeline-item span {
   display: block;
-  font-size: 18px;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 5px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
+
 .timeline-item p {
-  font-size: 14px;
-  background-color: #222;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: inline-block;
+  margin: 0;
+  color: #e50914;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
+.timeline-item:hover::before {
+  visibility: visible; 
+}
+
+@media (max-width: 768px) {
+  .timeline-horizontal {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .timeline-horizontal::before {
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  .timeline-item {
+    position: relative; 
+  }
+
+  .timeline-item::before {
+    top: -8px; 
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .timeline-item span {
+    position: relative;
+    z-index: 1; 
+  }
+
+  .timeline-item p {
+    position: relative;
+    z-index: 1; 
+  }
+}
+
 /* Pagination */
 .pagination {
   display: flex;
